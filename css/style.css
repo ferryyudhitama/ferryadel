@@ -4179,3 +4179,13 @@ a:focus {
 .attend input[type=radio]:checked ~ label{
   color: #7cafa5;
 }
+
+#toPeople {
+  font-family: "Great Vibes", cursive;
+  font-size: 60px;
+  font-size: 2rem;
+  color: #fff;
+  margin: 35px 0 0;
+  position: relative;
+  z-index: 10;
+}
