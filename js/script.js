@@ -567,7 +567,7 @@
                     type: "POST",
                     contentType: "application/json; charset=utf-8",
                     dataType: "json",
-                    url: "http://localhost/foodmenu/wp-json/user/v3/wedding",
+                    url: "https://bookingku.com/wp-json/user/v3/wedding",
                     data: JSON.stringify(datasent),
                     success: function () {
                         $( "#loader").hide();
