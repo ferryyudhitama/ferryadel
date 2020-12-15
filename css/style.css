@@ -29,11 +29,26 @@ URL:            http://themeforest.net/user/themexriver
 	Fonts
 ----------------------------*/
 @import url("https://fonts.googleapis.com/css?family=Dosis:400,600,700|Great+Vibes");
+@import url("https://fonts.googleapis.com/css?family=Dosis:400,600,700|Rouge+Script");
+
+/* @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap'); */
 /*--------------------------------------------------------------
 #0.1    Theme Reset Style
 --------------------------------------------------------------*/
 html {
   font-size: 18px;
+}
+
+select {
+  /* for Firefox */
+  -moz-appearance: none;
+  /* for Chrome */
+  -webkit-appearance: none;
+}
+
+/* For IE10 */
+select::-ms-expand {
+  display: none;
 }
 
 body {
@@ -445,7 +460,7 @@ a:focus {
 }
 
 .section-title h2, .section-title-white h2 {
-  font-family: "Great Vibes", cursive;
+  font-family: 'Rouge Script', cursive;
   background-color: rgba(94, 154, 142, 0.1);
   font-size: 46px;
   font-size: 2.55556rem;
@@ -1453,7 +1468,7 @@ a:focus {
 }
 
 .header-style-1 .couple-logo h1, .header-style-2 .couple-logo h1 {
-  font-family: "Great Vibes", cursive;
+  font-family: 'Rouge Script', cursive;
   font-size: 35px;
   font-size: 1.94444rem;
   margin: 0;
@@ -1734,7 +1749,7 @@ a:focus {
 }
 
 .hero .wedding-announcement .couple-name-merried-text h2 {
-  font-family: "Great Vibes", cursive;
+  font-family: 'Rouge Script', cursive;
   font-size: 90px;
   font-size: 5rem;
   color: #fff;
@@ -1887,7 +1902,7 @@ a:focus {
 }
 
 .hero .wedding-announcement .save-the-date h4 {
-  font-family: "Great Vibes", cursive;
+  font-family: 'Rouge Script', cursive;
   font-size: 40px;
   font-size: 2.22222rem;
   color: #fff;
@@ -2045,7 +2060,7 @@ a:focus {
 }
 
 .site-footer h2 {
-  font-family: "Great Vibes", cursive;
+  font-family: 'Rouge Script', cursive;
   font-size: 67px;
   font-size: 3.72222rem;
   color: #fff;
@@ -2282,7 +2297,7 @@ a:focus {
 }
 
 .wedding-couple-section .details .signature {
-  font-family: "Great Vibes", cursive;
+  font-family: 'Rouge Script', cursive;
   font-size: 28px;
   font-size: 1.55556rem;
   display: block;
@@ -2400,7 +2415,7 @@ a:focus {
 }
 
 .count-down-section h2 {
-  font-family: "Great Vibes", cursive;
+  font-family: 'Rouge Script', cursive;
   font-size: 72px;
   font-size: 4rem;
   color: #fff;
@@ -2758,7 +2773,7 @@ a:focus {
 }
 
 .cta h2 {
-  font-family: "Great Vibes", cursive;
+  font-family: 'Rouge Script', cursive;
   font-size: 75px;
   font-size: 4.16667rem;
   color: #fff;
@@ -4181,7 +4196,7 @@ a:focus {
 }
 
 #toPeople {
-  font-family: "Great Vibes", cursive;
+  font-family: 'Rouge Script', cursive;
   font-size: 60px;
   font-size: 2rem;
   color: #fff;
