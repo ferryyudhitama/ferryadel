@@ -4214,8 +4214,8 @@ a:focus {
 
 @media (max-width: 900px) {
   .hero {
-    /* height: calc(100vh - 50px); */
-    height: 20vh;
+    height: calc(100vh - 50px);
+    /* height: 20vh; */
     margin-top: -64px;
     z-index: -1;
   }
