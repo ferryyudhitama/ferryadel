@@ -4189,3 +4189,10 @@ a:focus {
   position: relative;
   z-index: 10;
 }
+
+.fa-music:before {
+  content: "\f001";
+  top: 10px;
+  position: absolute;
+  left: 10px;
+}
