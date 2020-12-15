@@ -596,13 +596,39 @@
         = TOGGLE MUSUC BIX
     -------------------------------------------*/
     if($(".music-box").length) {
-        var musicBtn = $(".music-box-toggle-btn"),
+        var musicBtn = $(".musicStart"),
+            musicPause = $(".musicPause"),
             musicBox = $(".music-holder");
 
+        musicPause.hide();
         musicBtn.on("click", function() {
-            musicBox.toggleClass("toggle-music-box");
+            musicBtn.hide();
+            musicPause.show();
+            // musicBox.toggleClass("toggle-music-box");
+            $("#song")[0].play();
             return false;
         })
+
+        musicPause.on("click", function() {
+            musicPause.hide();
+            musicBtn.show();    
+            // musicBox.toggleClass("toggle-music-box");
+            $("#song")[0].pause();
+            return false;
+        })
+
+        // document.getElementById('mute-sound').style.display = 'none';
+        // document.getElementById('unmute-sound').addEventListener('click', function(event){
+        //   document.getElementById('unmute-sound').style.display = 'none';
+        //   document.getElementById('mute-sound').style.display = 'inline-block';
+        //   document.getElementById('song').play();
+        // });
+      
+        // document.getElementById('mute-sound').addEventListener('click', function(event){
+        //   document.getElementById('mute-sound').style.display = 'none';
+        //   document.getElementById('unmute-sound').style.display = 'inline-block';
+        //   document.getElementById('song').pause();
+        // });
     }
 
 

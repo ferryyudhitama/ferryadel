@@ -61,12 +61,19 @@
 
         <!-- strat music-box -->
         <div class="music-box">
-            <button class="music-box-toggle-btn">
+            <button class="music-box-toggle-btn musicStart">
                 <i class="fa fa-music"></i>
             </button>
 
+            <button class="music-box-toggle-btn musicPause" >
+                <i class="fa fa fa-microphone-slash"></i>
+            </button>
+
             <div class="music-holder">
-                <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/800485699&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                <audio id="song" loop="">
+                    <source src="https://bookingku.com/music/Lifehouse-You-And-Me-Official-Video_Segment_0.mp3">
+                </audio>
+                <!-- <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/800485699&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe> -->
 
                 <!-- <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/800485699&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/mikecashmusic" title="Michael Cash" target="_blank" style="color: #cccccc; text-decoration: none;">Michael Cash</a> · <a href="https://soundcloud.com/mikecashmusic/you-and-me-lifehouse-cover" title="You and Me (Lifehouse Cover)" target="_blank" style="color: #cccccc; text-decoration: none;">You and Me (Lifehouse Cover)</a></div> -->
             </div>
