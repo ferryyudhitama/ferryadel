@@ -559,7 +559,7 @@
                 var datasent = {
                     wedding :  $("#weddingku").val(),
                     name :  $("input:text[name='name']").val(),
-                    attend :  $("input:radio[name='attend']").val(),
+                    attend :  $('input[name=attend]:checked').val(),
                     guest :  $("select[name='guest']").val(),
                     wish :  $("#wishes").val(),
                 }
