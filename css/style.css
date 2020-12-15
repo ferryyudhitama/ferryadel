@@ -4211,3 +4211,9 @@ a:focus {
   position: absolute;
   left: 10px;
 }
+
+@media (max-width: 767px) {
+  .hero {
+    height: calc(100vh - 60px);
+  }
+}
