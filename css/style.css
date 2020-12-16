@@ -4215,8 +4215,7 @@ a:focus {
 @media (max-width: 900px) {
   .hero {
     /* height: calc(100vh - 50px); */
-    height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
-    height: calc(var(--vh, 1vh) * 100);
+    min-height: -webkit-fill-available; 
     margin-top: -64px;
     z-index: -1;
   }
