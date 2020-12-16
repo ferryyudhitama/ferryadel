@@ -791,7 +791,11 @@
             //     document.documentElement.style.setProperty('--vh', `${vh}px`);
             // });
 
-            document.querySelector('#newhero').style.height = window.innerHeight;
+            document.querySelector('#newhero').style.height = window.innerHeight+'px';
+
+            // var vhHeight = $("#newhero").height();
+            // var chromeNavbarHeight = vhHeight - window.innerHeight;
+            // $('#newhero').css({ height: window.innerHeight, marginTop: chromeNavbarHeight });
    
 
         });
