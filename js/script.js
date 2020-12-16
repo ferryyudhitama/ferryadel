@@ -791,7 +791,13 @@
             //     document.documentElement.style.setProperty('--vh', `${vh}px`);
             // });
 
-            document.querySelector('#newhero').style.height = window.innerHeight+'px';
+            // document.querySelector('#newhero').style.height = window.innerHeight+'px';
+
+            document.documentElement.style.setProperty('--vh', `${window.innerHeight/100}px`);
+
+            window.addEventListener('resize', () => {
+                document.documentElement.style.setProperty('--vh', `${window.innerHeight/100}px`);
+            });
 
             // var vhHeight = $("#newhero").height();
             // var chromeNavbarHeight = vhHeight - window.innerHeight;
