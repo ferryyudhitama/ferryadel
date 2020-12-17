@@ -4094,6 +4094,10 @@ a:focus {
   bottom: -2px;
 }
 
+.attend{
+  margin-bottom: -5px !important;
+}
+
 .attend input[type="radio"]{
   height: auto;
   margin-right: 5px;
@@ -4211,6 +4215,7 @@ a:focus {
   position: absolute;
   left: 10px;
 }
+
 
 @media (max-width: 900px) {
   .hero {
