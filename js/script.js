@@ -533,9 +533,9 @@
                     required: true,
                     minlength: 2
                 },
-                guest: {
-                    required: true
-                },
+                // guest: {
+                //     required: true
+                // },
                 wish: {
                     required: true
                 },
@@ -547,9 +547,9 @@
 
             messages: {
                 name: "Please enter your name",
-                email: "Please enter your email",
-                guest: "Select your number of guest",
-                events: "Select your event list"
+                wish: "Please enter your wish",
+                attend: "Select your attend",
+                // events: "Select your event list"
             },
 
           
@@ -560,7 +560,7 @@
                     wedding :  $("#weddingku").val(),
                     name :  $("input:text[name='name']").val(),
                     attend :  $('input[name=attend]:checked').val(),
-                    guest :  $("select[name='guest']").val(),
+                    // guest :  $("select[name='guest']").val(),
                     wish :  $("#wishes").val(),
                 }
                 $.ajax({

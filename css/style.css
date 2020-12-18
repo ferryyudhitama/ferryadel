@@ -198,6 +198,7 @@ a:focus {
   margin: 5px 0 0 0;
   font-size: 13px;
   font-weight: 600;
+  position: absolute;
 }
 
 .validate-rsvp-form #loader {
@@ -4094,14 +4095,19 @@ a:focus {
   bottom: -2px;
 }
 
-.attend{
+/* .attend{
   margin-bottom: -5px !important;
-}
+} */
 
 .attend input[type="radio"]{
   height: auto;
   margin-right: 5px;
   cursor: pointer;
+}
+
+.attend .error{
+  top: 73px;
+  left: 17px;
 }
 
 .attend p{
@@ -4120,7 +4126,7 @@ a:focus {
   list-style: none;
   margin: 0;
   padding: 0;
-  overflow: auto;
+  /* overflow: auto; */
   /* display: inline; */
 }
 
@@ -4218,6 +4224,12 @@ a:focus {
 
 
 @media (max-width: 900px) {
+  .attend{
+    margin-bottom: 70px !important;
+  }
+  .attend .error {
+    top: 65px !important;
+  }
   .hero {
     /* height: calc(100vh - 50px); */
     height: calc(var(--vh, 1vh) * 100);
