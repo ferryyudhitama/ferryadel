@@ -2918,9 +2918,12 @@ a:focus {
 
 .events-section .event .see-location-btn {
   font-weight: 600;
-  color: #5e9a8e;
+  color: #fff;
   display: inline-block;
   margin-top: 5px;
+  background: #5e9a8e;
+  padding: 7px 25px 8px;
+  border-radius: 5px;
 }
 
 .events-section .event .see-location-btn:hover {
