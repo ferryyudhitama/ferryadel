@@ -773,12 +773,17 @@
 
 
             //show date
-            var session = location.search.split('session=')[1] ? location.search.split('session=')[1] : 2;
-            var nameview = location.search.split('name=')[1];
+            var query = window.location.search.substring(1);
+            var qs = parse_query_string(query);
+
+            // var session = location.search.split('session=')[1] ? location.search.split('session=')[1] : 2;
+            // var nameview = location.search.split('name=')[1];
+
+            var newsession = qs.session ? qs.session : 2
             
 
-            if(session){
-               if(session == 1){
+            if(newsession){
+               if(newsession == 1){
                 $('#session1').show();
                 $('#session2').hide();
                }else{
@@ -787,14 +792,16 @@
                }
             }
 
-            if(nameview){
-                $('#toPeople').text('to: ' + nameview);
+            if(qs.name){
+                $('#toPeople').text('to: ' + qs.name);
             }else{
                 $('#toPeople').text('');
             }
 
-            // var query = window.location.search.substring(1);
-            // var qs = parse_query_string(query);
+       
+
+            // console.log(qs.name)
+            // console.log(qs.session)
     
             // if(query.length !== 0){
             //     $('#toPeople').text('to: ' + qs.name);
