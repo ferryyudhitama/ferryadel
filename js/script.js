@@ -1,6 +1,9 @@
 (function($) {
 
-	"use strict";
+    "use strict";
+    
+
+    
 
 
     /*------------------------------------------
@@ -768,14 +771,36 @@
 
             smoothScrolling($("#navbar > ul > li > a[href^='#']"), $(".header-style-1 .navigation").innerHeight());
 
-            var query = window.location.search.substring(1);
-            var qs = parse_query_string(query);
-    
-            if(query.length !== 0){
-                $('#toPeople').text('to: ' + qs.name);
+
+            //show date
+            var session = location.search.split('session=')[1] ? location.search.split('session=')[1] : 2;
+            var nameview = location.search.split('name=')[1];
+            
+
+            if(session){
+               if(session == 1){
+                $('#session1').show();
+                $('#session2').hide();
+               }else{
+                $('#session2').show();
+                $('#session1').hide();
+               }
+            }
+
+            if(nameview){
+                $('#toPeople').text('to: ' + nameview);
             }else{
                 $('#toPeople').text('');
             }
+
+            // var query = window.location.search.substring(1);
+            // var qs = parse_query_string(query);
+    
+            // if(query.length !== 0){
+            //     $('#toPeople').text('to: ' + qs.name);
+            // }else{
+            //     $('#toPeople').text('');
+            // }
 
             
             // let vh = window.innerHeight * 0.01;
